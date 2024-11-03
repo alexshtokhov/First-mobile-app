@@ -1,9 +1,9 @@
 
-import FirstPage from "./Components/firstPage";
+import Pages from "./Pages";
 
 const App = () => {
   return (
-    <FirstPage />
+    <Pages />
   );
 }
 export default App;
