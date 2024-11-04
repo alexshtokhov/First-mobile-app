@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import * as Localization from 'react-native-localize';
+import * as Localization from 'expo-localization';
 
 // Импортируйте файлы перевода
 import translationEN from './locales/en/translation.json';
@@ -32,7 +32,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: Localization.getLocales()[0].languageTag, // Автоматически определяет язык устройства
+    lng: Localization.locale,
     fallbackLng: 'en', // Язык по умолчанию, если перевод для текущего языка не найден
     interpolation: {
       escapeValue: false, // React сам экранирует строки
