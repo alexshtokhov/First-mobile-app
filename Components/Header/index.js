@@ -1,5 +1,5 @@
 import {Text, View } from 'react-native';
-import styles from './HeaderStyles';
+import styles from './Header.styles';
 import BackArrow from "../../assets/icons/backArrow";
 import ClockIcon from "../../assets/icons/clockIcon";
 import SettingsIcon from "../../assets/icons/settingsIcon";

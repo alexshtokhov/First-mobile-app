@@ -1,5 +1,5 @@
 import {SafeAreaView } from 'react-native';
-import styles from './MainPageStyles';
+import styles from './MainPage.styles';
 import Header from "../Header";
 import Slider from "../Slider";
 

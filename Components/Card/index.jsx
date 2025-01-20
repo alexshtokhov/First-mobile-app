@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { fullBalance, userData } from '../../store/auth/selectors';
+import styles from './Card.styles';
 
 const Card = ({ card }) => {
   const { t } = useTranslation();
@@ -32,27 +33,7 @@ const Card = ({ card }) => {
 
 export default Card;
 
-const styles = StyleSheet.create({
-  card: {
-    padding: 10,
-    width: '100%',
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  cardTitle: {
-    fontSize: 12,
-    fontWeight: '700',
-    color: 'white',
-  },
-  mainBalance: {
-    fontSize: 31,
-    fontWeight: '700',
-    color: 'white',
-  },
-  subBalance: {
-    marginBottom: 10,
-    color: 'white',
-    fontSize: 17,
-  },
-});
+
+
+
+
